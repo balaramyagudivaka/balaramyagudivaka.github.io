@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design System for Portfolio */
+
+@layer base {
+  :root {
+     /* Light mode palette — mauve/pink 4-stripe (top → bottom)
+       from provided image: #944E63, #C78E93, #D8BDBD, #FCECEC */
+
+     /* Hex variables (direct use) */
+     --light-top-hex: #944E63;
+     --light-midtop-hex: #C78E93;
+     --light-midbottom-hex: #D8BDBD;
+     --light-bottom-hex: #FCECEC;
+
+     --primary-hex: var(--light-top-hex);
+     --secondary-hex: var(--light-midtop-hex);
+     --muted-hex: var(--light-midbottom-hex);
+     --background-hex: var(--light-bottom-hex);
+
+     /* HSL equivalents for hsl(var(--...)) usage (kept for Tailwind utility usage) */
+     --primary: 342 22% 45%;    /* #944E63 */
+     --secondary: 350 24% 67%;  /* #C78E93 */
+     --muted: 350 16% 79%;      /* #D8BDBD */
+     --background: 10 80% 97%;  /* #FCECEC */
+
+     --foreground-hex: #3B2B2B;
+    --foreground: 20 18% 24%;
+    /* Muted/secondary foregrounds for light mode (slightly higher L for less emphasis) */
+    --muted-foreground: 20 18% 46%;
+    --secondary-foreground: var(--foreground);
+
+     --card-hex: #F6EDEE;
+     --card: 10 70% 95%;
+     --card-foreground: var(--foreground);
+
+     --popover: var(--muted);
+     --popover-foreground: var(--foreground);
+
+     --accent: var(--secondary);
+     --accent-foreground: 0 0% 100%;
+
+     --destructive: 0 84% 60%;
+     --destructive-foreground: 0 0% 100%;
+
+     --border: 10 12% 90%;
+     --input: 10 70% 96%;
+     --ring: var(--primary);
+
+     --radius: 0.75rem;
+
+     --gradient-primary: linear-gradient(135deg, hsl(342 22% 45%), hsl(350 24% 67%));
+     --gradient-hero: linear-gradient(180deg, hsl(350 16% 79%) 0%, hsl(10 80% 97%) 100%);
+     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(350 16% 79%));
+     --glow-primary: 0 0 20px hsl(342 22% 45% / 0.06);
+     --glow-subtle: 0 0 36px hsl(350 24% 67% / 0.04);
+
+     --sidebar-background: 350 16% 79%;
+     --sidebar-foreground: var(--foreground);
+     --sidebar-primary: var(--primary);
+     --sidebar-primary-foreground: 0 0% 100%;
+     --sidebar-accent: var(--secondary);
+     --sidebar-accent-foreground: var(--foreground);
+     --sidebar-border: 10 12% 92%;
+     --sidebar-ring: var(--primary);
+  }
+
+  .dark {
+      /* Dark mode palette — from provided image (top → bottom)
+        primary deep: #261C2C, second: #4A3644, third: #635985, bottom: #6E86B0 */
+
+      --dark-top-hex: #261C2C;
+      --dark-second-hex: #4A3644;
+      --dark-third-hex: #635985;
+      --dark-bottom-hex: #6E86B0;
+
+      /* HSL approximations for theme utility usage */
+      /* Make `--primary` lighter so `text-primary` is readable on dark backgrounds */
+      --primary: 268 18% 60%;   /* lighter purple for text/accents */
+      --secondary: 268 14% 40%; /* secondary accent */
+      --muted: 268 18% 40%;     /* muted tone */
+      --accent: 220 22% 65%;    /* bottom accent */
+
+    /* Dark-mode background + foregrounds: ensure readable white-on-dark */
+    --background: 268 10% 6%; /* very dark base */
+    --foreground: 0 0% 100%;
+    --muted-foreground: 0 0% 100% / 0.75;
+    --secondary-foreground: 0 0% 100% / 0.9;
+
+    /* Card color in dark mode (slightly lighter than background) */
+    --card: 268 10% 10%;
+    --card-foreground: var(--foreground);
+
+      --card: var(--primary);
+      --card-foreground: var(--foreground);
+
+      --popover: var(--secondary);
+      --popover-foreground: var(--foreground);
+
+      --primary-hex: var(--dark-top-hex);
+      --primary-foreground: var(--foreground);
+
+      --secondary-hex: var(--dark-second-hex);
+      --secondary-foreground: var(--foreground);
+
+      --muted-hex: var(--dark-third-hex);
+      --muted-foreground: var(--foreground);
+
+      --accent-hex: var(--dark-bottom-hex);
+      --accent-foreground: var(--foreground);
+
+      --destructive: 0 84% 60%;
+      --destructive-foreground: var(--foreground);
+
+      --border: 260 12% 12%;
+      --input: 260 12% 10%;
+      --ring: var(--primary);
+
+      --gradient-primary: linear-gradient(135deg, hsl(268 18% 60%), hsl(220 22% 65%));
+      --gradient-hero: linear-gradient(180deg, hsl(268 18% 60%) 0%, hsl(220 22% 65%) 100%);
+      --gradient-card: linear-gradient(145deg, hsl(268 18% 60%), hsl(268 18% 40%));
+      --glow-primary: 0 0 28px hsl(268 18% 60% / 0.06);
+      --glow-subtle: 0 0 44px hsl(268 14% 40% / 0.04);
+
+      --sidebar-background: var(--primary);
+      --sidebar-foreground: var(--foreground);
+      --sidebar-primary: var(--primary);
+      --sidebar-primary-foreground: var(--foreground);
+      --sidebar-accent: var(--secondary);
+      --sidebar-accent-foreground: var(--foreground);
+      --sidebar-border: 260 12% 12%;
+      --sidebar-ring: var(--primary);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  code {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/50 backdrop-blur-xl border border-border/50 rounded-xl;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-primary);
+  }
+
+  .glow-box {
+    box-shadow: var(--glow-primary);
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .skill-badge {
+    @apply px-3 py-1.5 text-sm font-medium bg-secondary text-foreground rounded-lg border border-border/50 hover:border-primary/50 transition-all duration-300;
+  }
+
+  .nav-link {
+    @apply text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-muted-foreground text-lg max-w-2xl;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
