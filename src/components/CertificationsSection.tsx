@@ -17,7 +17,7 @@ export const CertificationsSection = () => {
   const { ref, isInView } = useScrollAnimation({ margin: "-80px" });
 
   return (
-    <section id="certifications" className="py-24" ref={ref}>
+    <section id="certifications" className="py-24 bg-secondary/30" ref={ref}>
       <div className="section-container">
         <motion.div
           initial="hidden"
