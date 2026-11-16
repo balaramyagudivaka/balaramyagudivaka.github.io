@@ -91,7 +91,7 @@ export const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-secondary/30" ref={ref}>
+    <section id="contact" className="py-24" ref={ref}>
       <div className="section-container">
         <motion.div
           initial="hidden"
@@ -104,7 +104,7 @@ export const ContactSection = () => {
             Get In <span className="gradient-text">Touch</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            I'm actively seeking opportunities in Data Science, ML Engineering, and Software Development
+            Open to Summer 2027 internships and full-time Software Engineering, AI/ML, and Data roles starting May 2027
           </p>
         </motion.div>
 
