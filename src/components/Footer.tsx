@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 const socialLinks = [
   { href: "https://github.com/balaramyagudivaka", Icon: Github },
   { href: "https://www.linkedin.com/in/bala-ramya-gudivaka-54731424b/", Icon: Linkedin },
-  { href: "mailto:balaramya1553@gmail.com", Icon: Mail }
+  { href: "mailto:balaramyag1523@gmail.com", Icon: Mail }
 ];
 
 export const Footer = () => {
