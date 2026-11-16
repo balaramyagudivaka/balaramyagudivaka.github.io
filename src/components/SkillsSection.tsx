@@ -4,29 +4,34 @@ import { useScrollAnimation, fadeInUp, staggerContainer, staggerItem } from '@/h
 
 const skillCategories = [
   {
-    title: 'Programming',
-    icon: Code,
-    skills: ['Python', 'R', 'SQL', 'C/C++', 'JavaScript', 'HTML', 'CSS'],
-  },
-  {
-    title: 'Data & ML Libraries',
+    title: 'AI / ML & LLMs',
     icon: Brain,
-    skills: ['Scikit-learn', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn', 'NLTK', 'spaCy', 'Transformers', 'XGBoost', 'FAISS', 'QLoRA / PEFT'],
+    skills: ['PyTorch', 'TensorFlow', 'Keras', 'Hugging Face Transformers', 'QLoRA / PEFT', 'RAG', 'FAISS', 'LangChain', 'LlamaIndex', 'vLLM', 'LLM Evaluation', 'NLP', 'Computer Vision'],
   },
   {
-    title: 'Frameworks',
+    title: 'Data Science & Statistics',
     icon: BarChart3,
-    skills: ['PyTorch', 'TensorFlow', 'Keras', 'Hugging Face', 'LangChain', 'LlamaIndex', 'Flask', 'FastAPI', 'Django REST'],
+    skills: ['Pandas', 'NumPy', 'scikit-learn', 'XGBoost', 'Statistical Modeling', 'Causal Inference', 'Propensity Score Matching', 'Survival Analysis', 'Time Series', 'NLTK', 'spaCy'],
   },
   {
-    title: 'Tools & Platforms',
+    title: 'Software Engineering',
+    icon: Server,
+    skills: ['Flask', 'FastAPI', 'Django REST', 'REST APIs', 'React', 'TypeScript', 'Git / GitHub', 'GitHub Actions (CI/CD)', 'Docker', 'OOP', 'Testing & Profiling'],
+  },
+  {
+    title: 'Programming Languages',
+    icon: Code,
+    skills: ['Python', 'R', 'SQL', 'C/C++', 'JavaScript', 'TypeScript', 'HTML/CSS'],
+  },
+  {
+    title: 'Cloud & Data Platforms',
+    icon: Cloud,
+    skills: ['AWS Bedrock', 'Google Cloud (GCP)', 'Google Gemini API', 'Snowflake', 'Databricks', 'ETL Pipelines', 'EHR Data (TriNetX / N3C)'],
+  },
+  {
+    title: 'Visualization & Tools',
     icon: Wrench,
-    skills: ['AWS Bedrock', 'Google Gemini', 'vLLM', 'Git/GitHub', 'Docker', 'Tableau', 'Power BI', 'Excel'],
-  },
-  {
-    title: 'Databases & Data',
-    icon: Database,
-    skills: ['Snowflake', 'Databricks', 'ETL Tools', 'EHR Data (TriNetX / N3C)', 'Survival Analysis', 'Propensity Score Matching'],
+    skills: ['Tableau', 'Power BI', 'Matplotlib', 'Seaborn', 'Plotly', 'Jupyter', 'Google Colab', 'Excel', 'VS Code'],
   },
 ];
 
