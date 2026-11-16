@@ -4,43 +4,72 @@ import { useScrollAnimation, fadeInUp, fadeInLeft, staggerContainer, staggerItem
 
 const experiences = [
   {
-    title: 'Data Analyst Intern',
-    company: 'APSSDC',
-    period: 'Jun 2023 – Aug 2023',
+    title: 'Graduate Research Assistant — AI MedRec Project',
+    company: 'Stony Brook Medicine',
+    period: 'May 2026 – Present',
     achievements: [
-      'Designed and automated data processing pipelines using Python and SQL, reducing manual reporting effort by 25%',
-      'Optimized legacy analysis scripts using OOP, profiling, and memoization for improved runtime efficiency',
-      'Built analytical models leveraging statistics and probability theory for data-driven decision-making',
+      'Contributing to a multi-repo medication-safety research platform (Android capture app, Django REST backend, FastAPI drug-interaction service) integrating AWS Bedrock, Google Gemini, and self-hosted LLMs for medication extraction and OCR pipelines',
+      'Diagnosed latency in locally-hosted LLM inference (Hugging Face Transformers / Mistral-7B), identifying per-request model-reload overhead and evaluating vLLM as a serving-engine replacement',
+      'Designing a comparative evaluation framework to benchmark structured-output accuracy between AWS Bedrock and self-hosted LLMs for medication data extraction',
+      'Collaborating on GPU-accelerated model serving on A100 environments to cut inference latency for real-time medical data processing',
     ],
   },
   {
-    title: 'Software Developer Intern',
+    title: 'Healthcare Data Researcher — TriNetX / N3C Research',
+    company: 'Stony Brook Medicine',
+    period: 'Apr 2026 – Present',
+    achievements: [
+      'Analyzing large-scale, de-identified EHR data to study treatment effectiveness and clinical outcomes in patients with Type 2 diabetes',
+      'Building patient cohorts from diagnoses, medications, demographics, lab measurements, and outcome definitions',
+      'Applying propensity score matching and overlap weighting, and assessing covariate balance with standardized mean differences',
+      'Running survival and competing-risk analyses (Cox proportional hazards, Fine–Gray) in R for longitudinal outcomes',
+    ],
+  },
+  {
+    title: 'Research Assistant — Medical Imaging AI',
+    company: 'SRM University, AP',
+    period: 'Jan 2025 – May 2025',
+    achievements: [
+      "Built and trained ConvNeXt models to classify Alzheimer's dementia stages across 40,000+ MRI images, achieving up to 86% accuracy",
+      'Handled data preprocessing, cleaning, and feature preparation for imaging pipelines',
+      'Evaluated and compared models using accuracy, precision, recall, and F1-score',
+    ],
+  },
+  {
+    title: 'Software Engineer',
     company: 'CAMPALIN Innovations',
-    period: 'Apr 2023 – May 2023',
+    period: 'Apr 2024 – May 2025',
     achievements: [
-      'Developed high-throughput data preprocessing pipeline, improving system performance by 30% for ML tasks',
-      'Integrated machine learning APIs into production services using Flask for scalable backend architecture',
-      'Collaborated with cross-functional teams to design and deploy fault-tolerant software components',
+      'Developed backend components in Python and Flask supporting application workflows and ML-based features',
+      'Built REST API endpoints for data processing, model inference, and service-to-service communication',
+      'Designed reusable Python modules for validation, preprocessing, and response handling to improve maintainability',
+      'Optimized backend logic and preprocessing workflows, improving overall system performance by 30%',
     ],
   },
   {
-    title: 'Research Assistant',
+    title: 'Research Assistant — NLP for Healthcare',
     company: 'SRM University, AP',
     period: 'Aug 2023 – Dec 2023',
     achievements: [
-      'Led deep learning research projects in NLP and medical image analysis',
-      'Published IEEE conference papers on drug review sentiment analysis and Alzheimer\'s detection',
-      'Mentored team members in deep learning techniques and research methodology',
+      'Cleaned and preprocessed large-scale patient drug review text for model training',
+      'Built and benchmarked RNN, LSTM, CNN, and fine-tuned BERT models, achieving 97% classification accuracy',
+      'Co-authored "Sentimental Analysis on Drug Reviews Using Fine-Tuned Transformers," published at IEEE ICCCNT 2024',
     ],
     researchLinks: [
       {
         title: 'Sentimental Analysis on Drug Reviews',
         url: 'https://ieeexplore.ieee.org/document/10725177',
       },
-      {
-        title: "Alzheimer's Disease Detection",
-        url: 'https://drive.google.com/file/d/1aaRyS6KCYR36nmZFDUuLTC-dOBehF3Vr/view',
-      },
+    ],
+  },
+  {
+    title: 'Data Analyst Intern',
+    company: 'APSSDC',
+    period: 'Jan 2023 – Jun 2023',
+    achievements: [
+      'Automated data processing and reporting pipelines using Python and SQL, reducing manual effort by 25%',
+      'Optimized analytical scripts using OOP and performance profiling for better runtime efficiency and maintainability',
+      'Applied statistical analysis to derive actionable insights supporting data-driven decision-making',
     ],
   },
 ];
