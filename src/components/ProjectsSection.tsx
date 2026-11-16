@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Brain, MessageSquare, Cpu, Microscope } from 'lucide-react';
+import { ExternalLink, Github, Brain, MessageSquare, Cpu, Microscope, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useScrollAnimation, fadeInUp, staggerContainer, staggerItem, scaleIn } from '@/hooks/useScrollAnimation';
 
@@ -8,11 +8,21 @@ const projects = [
     title: 'Fine-Tuning Mistral-7B for Cooking Assistant with RAG',
     icon: MessageSquare,
     problem: 'Building a domain-specific LLM assistant under limited GPU resources',
-    description: 'Fine-tuned Mistral-7B-Instruct using QLoRA (LoRA + 4-bit quantization) with custom PyTorch training loop. Implemented RAG using Sentence-BERT and FAISS for improved response grounding.',
+    description: 'Fine-tuned Mistral-7B-Instruct using QLoRA (LoRA + 4-bit quantization) with custom PyTorch training loop. Implemented RAG using Sentence-BERT and FAISS for improved response grounding, packaged as a containerized RAG application.',
     outcome: 'Reduced validation perplexity from 49 to 2.36, demonstrating strong domain adaptation',
     tech: ['Mistral-7B', 'QLoRA', 'PyTorch', 'RAG', 'FAISS', 'Sentence-BERT'],
     date: 'Dec 2025 – Jan 2026',
     github: 'https://github.com/balaramyagudivaka/Finetuning-Mistral-7B-for-Cooking-Assistant-with-RAG',
+  },
+  {
+    title: 'Global CO₂ Emissions: Drivers, Clusters & Forecasting',
+    icon: Globe,
+    problem: 'Understanding what drives CO₂ emissions across countries and how well they can be forecast',
+    description: 'Statistical and ML analysis of ~2,640 country-years (1990–2022) from Our World in Data. Benchmarked 14 forecasting models on a strict time-based split — linear baselines, Random Forest, XGBoost, MLP, LSTM, TimesFM, PatchTST, and ensembles — plus clustering and panel econometrics.',
+    outcome: 'Ridge regression won with test R² = 0.989; found and fixed data leakage, and identified three consistent emission profiles (ARI ≈ 0.7–0.9)',
+    tech: ['R', 'Python', 'scikit-learn', 'XGBoost', 'PyTorch', 'TimesFM', 'Clustering'],
+    date: 'Spring 2026 · AMS 597',
+    github: 'https://github.com/balaramyagudivaka/global-co2-emissions-analysis',
   },
   {
     title: 'Neural Machine Translation with Transformers',
