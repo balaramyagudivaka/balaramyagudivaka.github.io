@@ -131,7 +131,7 @@ export const HeroSection = () => {
             className="mb-6"
           >
             <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20">
-              Data Scientist • ML Engineer • Software Engineer
+              AI/ML Engineer • LLMs • Data Science • Software Engineering
             </span>
           </motion.div>
 
@@ -151,13 +151,11 @@ export const HeroSection = () => {
             transition={{ duration: 0.7, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-balance"
           >
-            A Data Science graduate student at{' '}
-            <span className="text-foreground font-medium">Stony Brook University</span>{' '}
-            with a strong foundation in{' '}
-            <span className="text-foreground font-medium">machine learning</span>,{' '}
-            <span className="text-foreground font-medium">data analytics</span>, and{' '}
-            <span className="text-foreground font-medium">software engineering</span>, 
-            driven to solve real-world problems through data.
+            M.S. Data Science at{' '}
+            <span className="text-foreground font-medium">Stony Brook University</span> and Graduate Research Assistant at{' '}
+            <span className="text-foreground font-medium">Stony Brook Medicine</span>, building{' '}
+            <span className="text-foreground font-medium">LLM systems for clinical data extraction</span> —{' '}
+            RAG, fine-tuning, and LLM evaluation.
           </motion.p>
 
           <motion.div
@@ -195,7 +193,7 @@ export const HeroSection = () => {
             {[
               { href: "https://github.com/balaramyagudivaka", Icon: Github },
               { href: "https://www.linkedin.com/in/bala-ramya-gudivaka-54731424b/", Icon: Linkedin },
-              { href: "mailto:balaramya1553@gmail.com", Icon: Mail }
+              { href: "mailto:balaramyag1523@gmail.com", Icon: Mail }
             ].map((item, index) => (
               <motion.a
                 key={item.href}
