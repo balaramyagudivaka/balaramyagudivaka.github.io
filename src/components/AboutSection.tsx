@@ -7,19 +7,19 @@ const educationCards = [
   {
     icon: GraduationCap,
     title: 'Stony Brook University',
-    subtitle: 'MS in Data Science • Expected Aug 2027',
-    detail: 'Stony Brook, NY'
+    subtitle: 'MS in Data Science • Aug 2025 – May 2027',
+    detail: 'Stony Brook, NY • Statistical Learning, Big Data Systems, Statistical Computing'
   },
   {
     icon: GraduationCap,
     title: 'SRM University, AP',
     subtitle: 'BTech in CSE, Big Data Analytics • GPA: 3.38/4.00',
-    detail: 'Sep 2021 – May 2025'
+    detail: 'Sep 2021 – May 2025 • Andhra Pradesh, India'
   },
   {
     icon: Sparkles,
     title: 'Key Strengths',
-    subtitle: 'Deep Learning • NLP • Transformers • MLOps • Research',
+    subtitle: 'LLMs • RAG • Fine-Tuning • LLM Evaluation • NLP • Healthcare Data',
     detail: null
   }
 ];
@@ -41,7 +41,7 @@ export const AboutSection = () => {
             About <span className="gradient-text">Me</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            A passionate technologist driven by data and innovation
+            Building LLM systems for messy, real-world healthcare data
           </p>
         </motion.div>
 
@@ -59,9 +59,10 @@ export const AboutSection = () => {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.3 }}
               >
-                I'm a <span className="text-foreground font-medium">Data Science graduate student</span> at 
-                Stony Brook University with a strong foundation in Computer Science and Big Data Analytics 
-                from SRM University.
+                I build <span className="text-foreground font-medium">LLM systems for messy, real-world healthcare data</span> and 
+                make sure they hold up in production. I'm an M.S. Data Science student at Stony Brook University and a{' '}
+                <span className="text-foreground font-medium">Graduate Research Assistant at Stony Brook Medicine</span>, working on 
+                AI MedRec — a medication-safety platform that uses LLMs to extract medication data from clinical documents.
               </motion.p>
               <motion.p 
                 className="text-lg text-muted-foreground leading-relaxed"
@@ -69,9 +70,10 @@ export const AboutSection = () => {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.4 }}
               >
-                My expertise spans building <span className="text-foreground font-medium">production-ready ML pipelines</span>, 
-                developing <span className="text-foreground font-medium">deep learning models</span> for complex problems, 
-                and creating <span className="text-foreground font-medium">data-driven solutions</span> that deliver measurable impact.
+                There I diagnose inference latency in self-hosted Mistral-7B, evaluate <span className="text-foreground font-medium">vLLM</span> for 
+                serving, and build a framework to benchmark extraction accuracy between{' '}
+                <span className="text-foreground font-medium">AWS Bedrock</span> and self-hosted models. I also do real-world evidence 
+                research on de-identified EHR data (TriNetX / N3C) — cohort construction, propensity score matching, and survival analysis.
               </motion.p>
               <motion.p 
                 className="text-lg text-muted-foreground leading-relaxed"
@@ -79,9 +81,17 @@ export const AboutSection = () => {
                 animate={isInView ? { opacity: 1, x: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.5 }}
               >
-                I've published <span className="text-foreground font-medium">IEEE research papers</span>, 
-                built transformer architectures from scratch, and optimized data pipelines to reduce 
-                processing time by 30%. I thrive at the intersection of research and practical application.
+                Before grad school I spent a year as a <span className="text-foreground font-medium">Software Engineer at CAMPALIN Innovations</span>, 
+                building Flask backend services for ML features and improving system performance by 30%. I've also published{' '}
+                <span className="text-foreground font-medium">two IEEE papers</span> in NLP and computer vision.
+              </motion.p>
+              <motion.p 
+                className="text-lg text-muted-foreground leading-relaxed"
+                initial={{ opacity: 0, x: -30 }}
+                animate={isInView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
+                <span className="text-primary font-medium">Open to Summer 2027 internships and full-time AI/ML engineering roles starting May 2027.</span>
               </motion.p>
             </div>
           </motion.div>
