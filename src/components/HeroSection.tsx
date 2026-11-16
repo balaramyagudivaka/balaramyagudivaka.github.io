@@ -130,8 +130,12 @@ export const HeroSection = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mb-6"
           >
-            <span className="inline-block px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20">
-              AI/ML Engineer • LLMs • Data Science • Software Engineering
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+              </span>
+              Open to 2027 Software Engineer, AI/ML &amp; Data roles
             </span>
           </motion.div>
 
@@ -157,6 +161,25 @@ export const HeroSection = () => {
             <span className="text-foreground font-medium">LLM systems for clinical data extraction</span> —{' '}
             RAG, fine-tuning, and LLM evaluation.
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.45 }}
+            className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-3xl mx-auto mb-10"
+          >
+            {[
+              { value: '1+ yr', label: 'Software Engineering' },
+              { value: '4', label: 'Research Roles' },
+              { value: '2', label: 'IEEE Publications' },
+              { value: '12', label: 'Projects' },
+            ].map((stat) => (
+              <div key={stat.label} className="glass-card px-4 py-3">
+                <div className="text-2xl font-bold gradient-text">{stat.value}</div>
+                <div className="text-xs text-muted-foreground mt-1">{stat.label}</div>
+              </div>
+            ))}
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
