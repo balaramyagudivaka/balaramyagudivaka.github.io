@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Code, Database, Brain, Wrench, BarChart3 } from 'lucide-react';
+import { Code, Database, Brain, Wrench, BarChart3, Cloud, Server } from 'lucide-react';
 import { useScrollAnimation, fadeInUp, staggerContainer, staggerItem } from '@/hooks/useScrollAnimation';
 
 const skillCategories = [
@@ -47,7 +47,7 @@ export const SkillsSection = () => {
             Technical <span className="gradient-text">Skills</span>
           </h2>
           <p className="section-subtitle mx-auto">
-            A comprehensive toolkit for building data-driven solutions
+            Tools I use across AI/ML, data science, and software engineering
           </p>
         </motion.div>
 
