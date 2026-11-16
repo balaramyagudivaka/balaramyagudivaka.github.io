@@ -12,7 +12,7 @@ export const useScrollAnimation = (options: ScrollAnimationOptions = {}) => {
   const isInView = useInView(ref, {
     once: options.once ?? true,
     margin: options.margin ?? "-100px",
-    amount: options.amount ?? 0.2,
+    amount: options.amount ?? 'some',
   });
 
   return { ref, isInView };
