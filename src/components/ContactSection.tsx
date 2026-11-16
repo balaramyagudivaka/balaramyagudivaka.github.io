@@ -16,8 +16,8 @@ const contactLinks = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'balaramya1553@gmail.com',
-    href: 'mailto:balaramya1553@gmail.com',
+    value: 'balaramyag1523@gmail.com',
+    href: 'mailto:balaramyag1523@gmail.com',
   },
   {
     icon: Phone,
