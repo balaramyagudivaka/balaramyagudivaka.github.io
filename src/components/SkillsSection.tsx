@@ -11,22 +11,22 @@ const skillCategories = [
   {
     title: 'Data & ML Libraries',
     icon: Brain,
-    skills: ['Scikit-learn', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn', 'NLTK', 'spaCy', 'Transformers'],
+    skills: ['Scikit-learn', 'NumPy', 'Pandas', 'Matplotlib', 'Seaborn', 'NLTK', 'spaCy', 'Transformers', 'XGBoost', 'FAISS', 'QLoRA / PEFT'],
   },
   {
     title: 'Frameworks',
     icon: BarChart3,
-    skills: ['TensorFlow', 'Keras', 'PyTorch', 'LangChain', 'LlamaIndex', 'Flask'],
+    skills: ['PyTorch', 'TensorFlow', 'Keras', 'Hugging Face', 'LangChain', 'LlamaIndex', 'Flask', 'FastAPI', 'Django REST'],
   },
   {
     title: 'Tools & Platforms',
     icon: Wrench,
-    skills: ['Git/GitHub', 'Docker', 'VS Code', 'Tableau', 'Power BI', 'Excel'],
+    skills: ['AWS Bedrock', 'Google Gemini', 'vLLM', 'Git/GitHub', 'Docker', 'Tableau', 'Power BI', 'Excel'],
   },
   {
     title: 'Databases & Data',
     icon: Database,
-    skills: ['Snowflake', 'Databricks', 'ETL Tools', 'Database Management'],
+    skills: ['Snowflake', 'Databricks', 'ETL Tools', 'EHR Data (TriNetX / N3C)', 'Survival Analysis', 'Propensity Score Matching'],
   },
 ];
 
