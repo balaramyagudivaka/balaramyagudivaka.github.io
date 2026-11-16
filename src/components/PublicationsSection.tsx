@@ -3,9 +3,11 @@ import { FileText, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useScrollAnimation, fadeInUp, staggerContainer, staggerItem } from '@/hooks/useScrollAnimation';
 
-const publications = [
+type Publication = { title: string; venue: string; publisher: string; year: string; link: string; status?: string };
+
+const publications: Publication[] = [
   {
-    title: 'Sentimental Analysis on Drug Reviews Using Fined Tuned Transformers',
+    title: 'Sentimental Analysis on Drug Reviews Using Fine-Tuned Transformers',
     venue: '2024 15th International Conference on Computing Communication and Networking Technologies (ICCCNT)',
     publisher: 'IEEE',
     year: '2024',
@@ -15,16 +17,8 @@ const publications = [
     title: 'Decoding Visual Complexity: Object Recognition through Vision Transformers and Hybrid Architectures',
     venue: '2024 International Conference on Augmented Reality, Intelligent Systems, and Industrial Automation (ARIIA)',
     publisher: 'IEEE',
-    year: '2024',
-    link: 'https://ieeexplore.ieee.org/abstract/document/11051814',
-  },
-  {
-    title: 'Alzheimer\'s Disease Detection Using Multi-Modal Deep Learning Approaches',
-    venue: 'CVMI, IEEE 2025',
-    publisher: 'IEEE',
     year: '2025',
-    status: 'Accepted',
-    link: 'https://drive.google.com/file/d/1aaRyS6KCYR36nmZFDUuLTC-dOBehF3Vr/view',
+    link: 'https://ieeexplore.ieee.org/abstract/document/11051814',
   },
 ];
 
